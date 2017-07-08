@@ -1,0 +1,29 @@
+<nav>
+  <div>
+    <p><a href="index.html">imaqtpie</a></p>
+  </div>
+  <ul>
+    <li><a class="{% if page.url == '/' %} active {% endif %}" href="index.html">Work</a></li>
+    <li><a class="{% if page.url contains 'process' %} active {% endif %}" href="process.html">Process</a></li>
+    <li><a href="https://github.com/colorlessenergy">My Work</a></li>
+  </ul>
+</nav>
+<section class="responsive-nav">
+  <div>
+    <p><a href="index.html">imaqtpie</a></p>
+  </div>
+  <div>
+    <img class="button" src="images/menu-icon.svg" alt="menu burger">
+  </div>
+</section>
+<section class="nav-responsive" id="responsive-nav">
+  <div class="imaqtpie-responsive">
+    <p>Imaqtpie</p>
+    <img class="button" src="images/menu-icon.svg" alt="menu burger">
+  </div>
+  <ul>
+    <li><a class="{% if page.url == '/' %} active {% endif %}" href="index.html">Work</a></li>
+    <li><a class="{% if page.url contains 'process' %} active {% endif %}" href="process.html">Process</a></li>
+    <li><a href="https://github.com/colorlessenergy">My Work</a></li>
+  </ul>
+</section>

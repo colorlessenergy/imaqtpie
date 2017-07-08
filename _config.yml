@@ -1,0 +1,2 @@
+baseurl: /imaqtpie
+exclude: ["README.md"]

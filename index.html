@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+
+<section class="info">
+  <h2>Imaqtpie - the Twitch Streamer</h2>
+  <p>A generic term for a master of the state of the art of all Games, </p>
+  <p>Imaqtpie might have retired from playing pro in League of Legends but, </p>
+  <p>He is still at the top in skill wise. He even accomplished the feat of going, </p>
+  <p>0 - 10 against the Notorious, Faker, no other retired pro could do this.</p>
+</section>
+<section class="display-work">
+  <div class="desc">
+    <h3>recent accomplishments</h3>
+    <p>these are some the feats young pie has accomplished</p>
+  </div>
+  <div class="work">
+    <div class="work1">
+      {% for display in site.data.show1 %}
+        <a href="{{display.link}}">
+          <div class="contain-work1 {% if display.backgroundcolor == 'lightblue' %} display-bg-color {% endif %}">
+            <div>
+              <h3>{{display.title}}</h3>
+              <p>{{display.desc}}</p>
+            </div>
+            <img src="{{display.image}}" alt="">
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    <div class="work2">
+      {% for display in site.data.show2 %}
+        <a href="{{display.link}}">
+          <div class="contain-work2 {% if display.backgroundcolor == 'lightblue' %} display-bg-color {% endif %}">
+            <div>
+              <h3>{{display.title}}</h3>
+              <p>{{display.desc}}</p>
+            </div>
+            <img src="{{display.image}}" alt="{{display.desc}}">
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="friend">
+  {% for friends in site.data.feedback %}
+  <div class="friend-contain">
+    <img src="{{friends.image}}" alt="{{friends.title}}">
+    <div class="desc">
+      <div>
+        <h3>{{friends.title}}</h3>
+        <p>{{friends.desc}}</p>
+      </div>
+      <p>{{friends.para}}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+<section class="moreinfo">
+    {% for skills in site.data.skills %}
+    <div class="moreinfo-contain">
+      <div>
+        <h3>{{skills.title}}</h3>
+        <p>{{skills.desc}}</p>
+        <p>{{skills.para}}</p>
+      </div>
+      <img src="{{skills.image}}" alt="{{skills.desc}}">
+    </div>
+    {% endfor %}
+</section>

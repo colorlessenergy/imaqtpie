@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="process">
+  <h3>Imaqtpies Process of knowledge from Grandmaster to viewer</h3>
+  <p>
+    Whether you’re a bronze 5 player or Challenger player, Imaqtpie will impress you. A good player will create truly stunning plays. A great Player will show you the ways of how to use any champion. Imaqtpie is all of these traits he will show you the ways to patrol the rift. He also, "is the best streamer in um other stuff wise too." The Imaqtpie process....
+  </p>
+</section>
+<section class="process-contain">
+  {% for process in site.data.process %}
+  <div class="process-info">
+    <img src="{{process.image}}" alt="{{process.title}}">
+    <div class="process-text">
+      <h3>{{process.title}}</h3>
+      <p>{{process.desc}}</p>
+      <p>{{process.para}}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>

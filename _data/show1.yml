@@ -1,0 +1,15 @@
+- title: "Lucian"
+  desc: Pocket Pick
+  image: 'images/lucian_0.jpg'
+  link: lucian.html
+
+- title: "Imaqtpie"
+  desc: Twitch streamer
+  image: 'images/qt-twitch.jpg'
+  link: twitch.html
+  backgroundcolor: lightblue
+
+- title: "Imaqtpie"
+  desc: Pro instagramer
+  image: 'images/instagramer.jpg'
+  link: instagram.html
